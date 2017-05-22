@@ -17,6 +17,13 @@ namespace Code_First_with_a_New_Database
         public IList<Tag> Tags { get; set; }
     }
 
+    public class Author
+    {
+        public int Id{ get; set; }
+        public string Name { get; set; }
+        public IList<Course> Courses {get; set; }
+    }
+   
 
 
     class Program

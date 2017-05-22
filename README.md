@@ -27,3 +27,16 @@ public class Course
         public IList<Tag> Tags { get; set; }
     }
 ```
+
+&nbsp;
+## 03 Add the Author class
+* In Course, Author is a navigation property to the Author type.
+* The Author type contains a list of Courses. In this scenario, there is a one-to-many relationship between Author and Courses.
+```
+public class Author
+    {
+        public int Id{ get; set; }
+        public string Name { get; set; }
+        public IList<Course> Courses {get; set; }
+    }
+```
