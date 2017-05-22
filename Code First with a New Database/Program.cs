@@ -32,6 +32,13 @@ namespace Code_First_with_a_New_Database
 
     }
 
+    public enum CourseLevel
+    {
+        Beginner = 1,
+        Intermediate = 2,
+        Advanced = 3
+    }
+
     class Program
     {
         static void Main(string[] args)

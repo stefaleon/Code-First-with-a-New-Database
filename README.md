@@ -53,3 +53,15 @@ public class Tag
 
     }
 ```
+
+&nbsp;
+## 05 Add the CourseLevel enum
+* Add the CourseLevel enum type.
+```
+public enum CourseLevel
+    {
+        Beginner = 1,
+        Intermediate = 2,
+        Advanced = 3
+    }
+```
