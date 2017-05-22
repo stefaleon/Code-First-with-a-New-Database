@@ -65,3 +65,17 @@ public enum CourseLevel
         Advanced = 3
     }
 ```
+
+
+&nbsp;
+## 06 Add the PlutoContext
+* Create the PlutoContext class which inherits from DbContext, by `using System.Data.Entity`.
+* It contains DbSets for Courses, Authors and Tags.
+```
+public class PlutoContext : DbContext
+    {
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<Tag> Tags { get; set; }
+    }
+```
