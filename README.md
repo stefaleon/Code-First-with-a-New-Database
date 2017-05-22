@@ -4,3 +4,10 @@
 &nbsp;
 ## 00 Start the project
 * In VS, create a Console Application project.
+
+&nbsp;
+## 01 Install Entity Framework
+* In Package Manager Console, install Entity Framework:
+```
+PM> install-package EntityFramework
+```
