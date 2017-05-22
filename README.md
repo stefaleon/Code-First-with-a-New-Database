@@ -40,3 +40,16 @@ public class Author
         public IList<Course> Courses {get; set; }
     }
 ```
+
+&nbsp;
+## 04 Add the Tag class
+* There is a many-to-many relationship between Courses and Tags.
+```
+public class Tag
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public IList<Course> Courses { get; set; }
+
+    }
+```
