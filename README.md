@@ -103,3 +103,12 @@ PM> enable-migrations
 Checking if the context targets an existing database...
 Code First Migrations enabled for project Code First with a New Database.
 ```
+
+&nbsp;
+## 09 Add the InitialModel migration
+* Every time we make a change to our model we need to create a migration. We have created the new model, so we may call this migration InitialModel. We will add it in order to represent the changes we have made.
+```
+PM> add-migration InitialModel
+Scaffolding migration 'InitialModel'.
+The Designer Code for this migration file includes a snapshot of your current Code First model. This snapshot is used to calculate the changes to your model when you scaffold the next migration. If you make additional changes to your model that you want to include in this migration, then you can re-scaffold it by running 'Add-Migration InitialModel' again.
+```
