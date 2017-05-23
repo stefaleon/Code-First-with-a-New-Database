@@ -112,3 +112,14 @@ PM> add-migration InitialModel
 Scaffolding migration 'InitialModel'.
 The Designer Code for this migration file includes a snapshot of your current Code First model. This snapshot is used to calculate the changes to your model when you scaffold the next migration. If you make additional changes to your model that you want to include in this migration, then you can re-scaffold it by running 'Add-Migration InitialModel' again.
 ```
+
+&nbsp;
+## 10 Run the migration
+* By running the migrations the database gets updated.
+```
+PM> update-database
+Specify the '-Verbose' flag to view the SQL statements being applied to the target database.
+Applying explicit migrations: [201705230623297_InitialModel].
+Applying explicit migration: 201705230623297_InitialModel.
+Running Seed method.
+```
