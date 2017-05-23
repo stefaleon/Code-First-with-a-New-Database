@@ -66,7 +66,6 @@ public enum CourseLevel
     }
 ```
 
-
 &nbsp;
 ## 06 Add the PlutoContext
 * Create the PlutoContext class which inherits from DbContext, by `using System.Data.Entity`.
@@ -78,4 +77,20 @@ public class PlutoContext : DbContext
         public DbSet<Author> Authors { get; set; }
         public DbSet<Tag> Tags { get; set; }
     }
+```
+
+&nbsp;
+## 07 Specify a connectionString to the database
+* In App.config, add the appropriate connectionString.
+```
+<connectionStrings>
+    <add name="DefaultConnection" connectionString="data source=.\SQLEXPRESS; initial catalog=PlutoCodeFirst; integrated security=SSPI" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+```
+* For demonstration purposes we did not go by the convention of giving the connectionString the same name we gave to the DbContext.
+We named it DefaultConnection instead, and we will edit the PlutoContext class definition by adding a constructor overload that receives a string parameter, which specifies the name of the connectionString in the configuration file.
+```
+public PlutoContext()
+            : base("name=DefaultConnection")
+        { }
 ```
