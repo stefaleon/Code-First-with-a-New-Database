@@ -94,3 +94,12 @@ public PlutoContext()
             : base("name=DefaultConnection")
         { }
 ```
+
+&nbsp;
+## 08 Enable migrations
+* Once in the lifetime of a project, we need to enable migrations. In PM console:
+```
+PM> enable-migrations
+Checking if the context targets an existing database...
+Code First Migrations enabled for project Code First with a New Database.
+```
